@@ -1,0 +1,28 @@
+{
+	"name": "trigger_pipeline",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "ingest_pipeline",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"p_window_end_date": "@trigger().scheduledTime"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 168,
+				"startTime": "2021-03-28T19:14:00",
+				"endTime": "2021-04-11T19:14:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}

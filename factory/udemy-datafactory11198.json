@@ -1,0 +1,9 @@
+{
+	"name": "udemy-datafactory11198",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "959e9a25-b1a2-4a2c-9307-90aa8d61cb1e",
+		"tenantId": "ecd9135b-e3e6-4d95-9533-2abd0318a740"
+	}
+}
